@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/pb_signup_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <TextView
+        android:id="@+id/tv_warning_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:fontFamily="@font/inconsolata"
+        android:visibility="invisible"
+        android:animateLayoutChanges="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_a_new_account"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bigshoulders"
+            android:textSize="40sp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <View
+
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inconsolata"
+
+                    android:layout_marginStart="8dp"/>
+                <View
+
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_sign_up_name"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/inconsolata"
+                    android:inputType="textPersonName"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_warning_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/warning_sign"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:animateLayoutChanges="true"/>
+                <EditText
+                    android:id="@+id/et_sign_up_email"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:hint="@string/e_mail"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/inconsolata"
+                    android:inputType="textEmailAddress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_warning_password"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/warning_sign"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:animateLayoutChanges="true"/>
+                <EditText
+                    android:id="@+id/et_sign_up_pass"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/inconsolata"
+                    android:inputType="textPassword"
+                    />
+                <ImageView
+                    android:id="@+id/iv_show_pass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="show"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_warning_password_repeat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/warning_sign"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:animateLayoutChanges="true"/>
+                <EditText
+                    android:id="@+id/et_sign_up_repeat_pass"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:hint="@string/re_enter_your_password"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/inconsolata"
+                    android:inputType="textPassword"
+                    />
+                <ImageView
+                    android:id="@+id/iv_show_pass_repeat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="show"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_btn_sign_up"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xml_btn_2"
+                android:fontFamily="@font/inconsolata"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/go_back"
+            android:layout_marginEnd="35dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grass" />
+
+</LinearLayout>

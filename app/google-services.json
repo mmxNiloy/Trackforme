@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "567394077435",
+    "firebase_url": "https://track-for-me.firebaseio.com",
+    "project_id": "track-for-me",
+    "storage_bucket": "track-for-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567394077435:android:d317e282f6b03c4535be5e",
+        "android_client_info": {
+          "package_name": "com.larl.trackforme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567394077435-43s6lh44c8e4m4tbnqoa21u5uko8vr46.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.larl.trackforme",
+            "certificate_hash": "84bb0cdbd373c74e205fe4c330508b22c780359e"
+          }
+        },
+        {
+          "client_id": "567394077435-og5o1lk8btjri2ennm1nt44ovn4njlmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPW5_enlvs032CRZT8LM2yrSaRwNBoBBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567394077435-og5o1lk8btjri2ennm1nt44ovn4njlmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

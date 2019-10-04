@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploading"
+    android:orientation="vertical"
+    android:background="@drawable/sign_in_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cutefont"
+        android:text="@string/new_track_record"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:background="@color/black" />
+    <EditText
+        android:id="@+id/et_tuition_name"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/tuition_name"
+        android:textColorHint="@color/gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inconsolata" />
+    <EditText
+        android:id="@+id/et_location"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/tuition_location"
+        android:textColorHint="@color/gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inconsolata" />
+    <EditText
+        android:id="@+id/et_contact_number"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/contact_number"
+        android:inputType="number"
+        android:textColorHint="@color/gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inconsolata" />
+    <EditText
+        android:id="@+id/et_salary"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/salary"
+        android:inputType="number"
+        android:textColorHint="@color/gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inconsolata"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/et_workday_number"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/workday_number"
+        android:inputType="number"
+        android:textColorHint="@color/gray"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inconsolata" />
+    <Button
+        android:id="@+id/btn_create_record"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="@string/create_record"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/xml_btn_2"
+        android:fontFamily="@font/inconsolata"/>
+
+</LinearLayout>

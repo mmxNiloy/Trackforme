@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/sign_in_bg"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pb_login_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_warning_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:fontFamily="@font/inconsolata"
+        android:visibility="invisible"
+        android:animateLayoutChanges="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bigshoulders"
+            android:textSize="40sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/inconsolata"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track_for_me"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cutefont"
+            android:textSize="40sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <View
+
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inconsolata"
+
+                    android:layout_marginStart="8dp"/>
+                <View
+
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_warning_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/warning_sign"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:animateLayoutChanges="true"/>
+                <EditText
+                    android:id="@+id/et_log_in_email"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:hint="@string/e_mail"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/inconsolata"
+                    android:inputType="textEmailAddress"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_warning_password"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/warning_sign"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"/>
+                <EditText
+                    android:id="@+id/ev_log_in_pass"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/inconsolata"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_show_pass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="show"
+                    />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/id_btn_log_in"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xml_btn"
+                android:fontFamily="@font/inconsolata"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+                <View
+
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_an_account"
+                    android:fontFamily="@font/inconsolata"
+                    android:textColor="@color/gray"
+
+                    android:layout_marginStart="8dp"/>
+                <View
+
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_btn_sign_up"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xml_btn_2"
+                android:fontFamily="@font/inconsolata"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="or"
+                android:fontFamily="@font/inconsolata"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_via"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/inconsolata"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/id_btn_fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fb_btn_bg" />
+
+                <ImageButton
+                    android:id="@+id/id_btn_gplus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/gplus_btn_bg" />
+                <ImageButton
+                    android:id="@+id/id_btn_twt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/twitter_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

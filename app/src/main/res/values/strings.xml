@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Track for me</string>
+    <string name="welcome">Welcome</string>
+    <string name="to">to</string>
+    <string name="login">Login</string>
+    <string name="track_for_me">Track for me</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_via">Sign up via</string>
+    <string name="credits_icon">Freepik , Icons8 , Macrovecto</string>
+    <string name="email_warning">This E-mail is not valid.</string>
+    <string name="pass_warning_short">The password is too short.</string>
+    <string name="create_a_new_account">Create a new Account</string>
+    <string name="name">Name</string>
+    <string name="re_enter_your_password">Re-enter your Password</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="search">search</string>
+    <string name="tuition_name">Student\'s name</string>
+    <string name="new_track_record">New Track Record</string>
+    <string name="contact_number">Contact number</string>
+    <string name="salary">Salary</string>
+    <string name="workday_number">Workday number per month</string>
+    <string name="create_record">Create Record</string>
+    <string name="tuition_location">Tuition Location</string>
+</resources>
